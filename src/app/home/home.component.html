@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<div class="container" style="text-align:center">
+  <div class="row" style="text-align: center">
+      <br><br><br>  
+  </div>
+  <div class="row" style="text-align:center">
+    <h1>Characters</h1>
+    <br><br><br><br>
+    <div *ngFor="let character of allDetails.characters" class="col-md-6">
+      <div class="panel panel-default border border-success">
+         
+        <div class="panel-heading" style="font-size:15px;">{{character.aliases}}
+
+        </div>
+        
+        <div class="panel-body" style="font-size:15px;">
+          <p>{{character.culture}} </p>
+          <p>{{character.playedBy}} </p>
+          <p>{{character.gender}} </p>
+        </div>
+      
+        
+        <button (click)="getCharacters(character.url)" style="font-size:15px;">Click</button>
+        <br/><br/>
+      </div>  
+    
+      
+    </div>
+  </div>  
+    <br><br><br><br><br><br><br><br><br>
+    <div class="row" style="text-align:center">
+      <h1>Books</h1>
+      <br><br><br><br><br><br>
+      <div *ngFor="let book of allDetails.books" class="col-md-6"> 
+        <div class="panel panel-default border border-danger design">
+          <div class="panel-heading" style="font-size:15px;">{{book.name}}</div>
+          <div class="panel-body" style="font-size:15px;">
+            <p>{{book.country}} </p>
+            <p>{{book.publisher}} </p>
+            <p>{{book.mediaType}} </p>
+          </div>
+          <button (click)="getBooks(book.url)" style="font-size:15px;">Click</button>
+          <br/><br/>
+        </div>  
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    
+    <div class="row" style="text-align:center">
+      <h1>Houses</h1>
+      <br><br><br><br><br><br><br><br><br>
+      <div *ngFor="let house of allDetails.houses" class="col-md-12">
+        <div class="panel panel-default border border-danger display">
+          <div class="panel-heading" style="font-size:15px;">{{house.name}}</div>
+          <div class="panel-body" style="font-size:15px;">
+            <p>{{house.coatOfArms}} </p>
+            <p>{{house.region}} </p>
+          </div>
+          <button (click)="getHouses(house.url)" style="font-size:15px;">Click</button>
+          <br/><br/>
+        </div>  
+        
+      </div>
+    </div>
+</div>      
+ 
+
+</html>

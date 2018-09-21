@@ -1,0 +1,42 @@
+
+
+<div class="container">
+  <div class="row" *ngIf="characterValue">
+          <div class="col-md-6">
+            <label style="margin-left:-210px;">Gender:</label>
+            <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.gender" readonly> 
+            <!-- <p style="margin-top:-25px;"></p> -->
+          </div>
+          
+          <div class="col-md-6">
+              <label style="margin-left:-215px;">Culture:</label>
+              <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.culture" readonly> 
+          </div>
+          <div class="col-md-6"> 
+              <label style="margin-left:-220px;">Aliases:</label>
+              <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.aliases" readonly> 
+          </div>
+          <div class="col-md-6">
+              <label style="margin-left:-210px;">Books:</label>
+              <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.books" readonly> 
+          </div>
+          <div class="col-md-6">
+              <label style="margin-left:-220px;">Allegiances:</label>
+              <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.allegiances" readonly> 
+          </div>  
+          <div class="col-md-6">
+              <label style="margin-left:-220px;">Tv Series:</label>
+              <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.tvSeries" readonly> 
+          </div>
+          <div class="col-md-6">
+            <label style="margin-left:-220px;">Played By:</label>
+            <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.playedBy" readonly> 
+        </div>
+        <div class="col-md-6">
+            <label style="margin-left:-220px;">Name:</label>
+            <input type="text" class="form-control" style="width:400px;" [(ngModel)]="characterValue.name" readonly> 
+        </div>
+  </div>
+
+  <hr>
+</div>  
